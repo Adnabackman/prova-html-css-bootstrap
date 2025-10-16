@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo da Hamburgueria">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+
+            <div class="pesquisar">
+                <input type="text" placeholder="Buscar">
+            </div>
+        </nav>
+    </header>
+
+    <main class="formulario-container">
+        <form action="finalizado.html" method="get">
+            <h2>Cadastre-se e compre agora.</h2>
+
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required autofocus placeholder="Informe seu nome completo">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Informe seu email">
+
+            <label for="dataNasc">Data de nascimento</label>
+            <input type="date" name="dataNasc" id="dataNasc">
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" maxlength="8" placeholder="Informe uma senha de 8 dígitos">
+
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco" placeholder="Informe seu endereço completo">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Informe seu telefone com DDD">
+
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+                <option value="" selected hidden>Selecione sua opção</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Prefiro não informar">Prefiro não informar</option>
+            </select>
+
+            <label for="preferencia">Preferência de Comunicação</label>
+            <select name="preferencia" id="preferencia">
+                <option value="" selected hidden>Selecione uma opção</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="telefone">Telefone</option>
+                <option value="mensagem">Mensagem</option>
+                <option value="instagram">Instagram</option>
+            </select>
+
+            <input type="submit" value="Finalizar">
+        </form>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img src="img/logo.png" alt="Logo Backman's">
+            <p>© 2025 Backman's Hamburgueria — Criado e Desenvolvido por Adna Backman.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

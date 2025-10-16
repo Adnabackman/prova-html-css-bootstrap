@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fjalla One", sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c08a3f;
+    padding: 10px 30px;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #070604;
+}
+
+.pesquisar {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.pesquisar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.sobre {
+    background-image: url('img/bg3.avif');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fundo-escuro {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 60px;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+.sobre h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffcc66;
+}
+
+.sobre p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: white;
+}
+
+.localizacao {
+    background-color: #c08a3f;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.localizacao h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #070604;
+}
+
+.localizacao p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #070604;
+}
+
+.mapa-conteudo iframe {
+    width: 90%;
+    max-width: 1000px;
+    height: 450px;
+    border: none;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: #2b2b2b;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1000px;
+    color: white;
+}
+
+.rodape img {
+    height: 100px;
+}
+
+.rodape p {
+    font-size: 18px;
+    color: #ccc;
+    text-align: left;
+}
+
+.cardapio {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.cardapio h1 {
+    font-size: 48px;
+    color: #ffcc66;
+    margin-bottom: 40px;
+}
+
+.card-conteudo {
+    display: grid;
+    gap: 30px;
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+}
+
+.card {
+    position: relative;
+    background-color: #2b2b2b;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    color: #ffcc66;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #c08a3f;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(255, 204, 102, 0.3);
+}
+
+.botao-compre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #c08a3f;
+    color: white;
+    border-radius: 10px;
+    height: 25px;
+}
+
+
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: url('img/bg3.avif');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    color: white;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffcc66;
+    font-size: 32px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+form input,
+form select,
+form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #c08a3f;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #a6712d;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 40px;
+    color: #ffcc66;
+}
+
+.p1 {
+    margin: 100px;
+    text-align: center;
+}
+
+.adna {
+    display: block;
+    margin: 10px auto 20px auto;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.finalizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.finalizado img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
+.redes-sociais {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.redes-sociais .titulo {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.icones {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap; 
+}
+
+.icones a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.icones ion-icon {
+  font-size: 1.8rem;
+}
+
