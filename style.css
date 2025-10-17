@@ -282,11 +282,6 @@ form input[type="submit"]:hover {
     gap: 5px;
 }
 
-textarea {
-    resize: none;
-    height: 100px;
-}
-
 .titulo {
     text-align: center;
     margin: 40px;
